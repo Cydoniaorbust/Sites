@@ -1,0 +1,109 @@
+body {
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 50px;
+}
+
+header {
+	text-align: center;
+	padding: 15px;
+	border: 5px solid #ffc125;
+	margin: 5px 0;
+}
+
+main {
+
+}
+
+footer {
+	text-align: center;
+	padding: 15px;
+	border: 5px solid #ffc125;
+	margin: 50px 0;
+}
+
+table {
+	border: 10px ridge #aaaaaa;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #a2a9b1;
+}
+
+td div {
+	display:flex;
+	justify-content: center; 
+	/*align-items: flex-end;*/
+	width: 120px;
+	height: 30px;
+}
+
+.legend {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	margin: 10px 1px;
+}
+
+.all {
+	background: linear-gradient(to right, #2E41B6, #1D85A8, #FF9424, #FFC124);
+	width: 450px;
+	margin: 1px 1px;
+}
+
+.logic, .intuition, .ethics, .sensory {
+	color: black;
+	width: 100px;
+	margin: 1px 1px;
+}
+
+.logic,
+.legend.wl,
+.legend.kl,
+.wl:hover ~ table .wl,
+.kl:hover ~ table .kl,
+.all:hover ~ table .wl,
+.all:hover ~ table .kl,
+.logic:hover ~ table .wl,
+.logic:hover ~ table .kl { background-color: #2E41B6; }
+
+.intuition,
+.legend.wi,
+.legend.ki,
+.wi:hover ~ table .wi,
+.ki:hover ~ table .ki,
+.all:hover ~ table .wi,
+.all:hover ~ table .ki,
+.intuition:hover ~ table .wi,
+.intuition:hover ~ table .ki { background-color: #1D85A8; }
+
+.sensory,
+.legend.ws,
+.legend.ks,
+.ws:hover ~ table .ws,
+.ks:hover ~ table .ks,
+.all:hover ~ table .ws,
+.all:hover ~ table .ks,
+.sensory:hover ~ table .ws,
+.sensory:hover ~ table .ks { background-color: #FF9424; }
+
+.ethics,
+.legend.we,
+.legend.ke,
+.we:hover ~ table .we,
+.ke:hover ~ table .ke,
+.all:hover ~ table .we,
+.all:hover ~ table .ke,
+.ethics:hover ~ table .we,
+.ethics:hover ~ table .ke { background-color: #FFC124; }
+
+.wl, .wi, .ws, .we {
+	background-color: lightgray;
+	color: white;
+}
+
+.kl, .ki, .ks, .ke {
+	background-color: white;
+	color: black; 
+}
